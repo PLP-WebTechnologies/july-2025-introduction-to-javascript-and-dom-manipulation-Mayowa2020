@@ -1,74 +1,65 @@
-/* General Reset */
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-/* Body Styling */
+/* General Styles */
 body {
-	font-family: Arial, sans-serif;
-	line-height: 1.6;
-	background-color: #f4f4f9;
-	color: #333;
-	padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    color: #333;
 }
 
-/* Header */
-header {
-	background: #333;
-	color: #fff;
-	padding: 15px 20px;
-	text-align: center;
+/* Header & Footer */
+header, footer {
+    background: #34495e;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
 }
 
-header nav ul {
-	list-style: none;
-	display: flex;
-	justify-content: center;
-	margin-top: 10px;
+/* Navigation Bar */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: #2ecc71;
+    margin: 0;
+    padding: 0.5rem 0;
+}
+nav ul li {
+    margin: 0 1rem;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-header nav ul li {
-	margin: 0 15px;
+/* Main Content */
+main {
+    max-width: 700px;
+    margin: 2rem auto;
+    background: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
 }
-
-header nav ul li a {
-	color: #fff;
-	text-decoration: none;
-}
-
-header nav ul li a:hover {
-	text-decoration: underline;
-}
-
-/* Sections */
 section {
-	margin: 30px 0;
-	padding: 20px;
-	background: #fff;
-	border-radius: 8px;
-	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
 }
-
-/* Button */
 button {
-	padding: 10px 15px;
-	background: #0077cc;
-	color: #fff;
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
+    background: #3498db;
+    color: #fff;
+    border: none;
+    padding: 0.6em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s;
 }
-
 button:hover {
-	background: #005fa3;
+    background: #2980b9;
 }
-
-/* Footer */
-footer {
-	text-align: center;
-	margin-top: 20px;
-	font-size: 0.9em;
-	color: #777;
+#guestList {
+    margin: 1rem 0;
+    padding: 0;
+    list-style: disc inside;
 }
